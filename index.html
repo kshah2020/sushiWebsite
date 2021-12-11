@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Sushi Rhymes </title>
+  <link rel="icon" type="image/x-icon" href="sushiIcon.jpeg">
+
+  <script>
+    function generator(){
+      document.getElementById("main").innerHTML = "test me here";
+    }
+
+    function randomImage(){
+      var randomNumber = Math.floor(Math.random()*5)+1;
+      var name = "img_" + randomNumber + ".png";
+      document.getElementById("randomImage").src = name;
+    }
+
+    function randomImage2(){
+      var randomNumber = Math.floor(Math.random()*5)+1;
+      var name = "img_" + randomNumber + ".png";
+      document.getElementById("randomImage2").src = name;
+    }
+
+  </script>
+  </head>
+
+
+
+<body>
+  <p> yes </p>
+  <div>
+
+    <p id="main" onmousedown="generator()"> click here </p>
+  </div>
+
+  <marquee> <img src="pizza.png" style="width:200px;"> </marquee> 
+
+  <br>
+  
+  <img id="randomImage" src="" style="width:200px;"> 
+  <img id="randomImage2" src="" style="width:200px;">
+  <p onmousedown="randomImage();randomImage2();"> pick your first two ingredients</p>
+
+
+  <img id="randomImage2" src="" style="width:200px;">
+  <p onmousedown="randomImage2()"> adjust your second ingredient</p>
+
+  <audio controls autoplay>
+    <source src="ping.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+
+  <footer>
+    <p> this is a footer </p>
+  </footer>
+
+</html>
